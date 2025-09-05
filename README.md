@@ -22,7 +22,7 @@ A console-based Hangman game implemented using Test-Driven Development (TDD) met
 The game follows a modular, object-oriented design with clear separation of concerns:
 
 ```
-hangman-game/
+hangman/
 ├── main.py              # Game controller and entry point
 ├── hangman_game.py      # Core game logic
 ├── dictionary.py        # Word/phrase management
@@ -45,8 +45,8 @@ hangman-game/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/digitalaashish/hangman/
-cd hangman-game
+git clone https://github.com/digitalaashish/hangman.git
+cd hangman
 ```
 
 2. Install dependencies (if any):
@@ -69,13 +69,18 @@ python -m unittest test_hangman.py -v
 
 ### Code Quality Check
 
-Verify code quality standards:
+First, install the code quality tools:
+```bash
+pip install flake8 pylint
+```
+
+Then, verify code quality standards:
 ```bash
 # Check with Flake8
 flake8 *.py --max-line-length=79
 
 # Check with Pylint
-pylint *.py --max-line-length=79
+pylint *.py
 ```
 
 ## 🎯 How to Play
